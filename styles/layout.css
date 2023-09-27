@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0 30% 0 30%;
+}
+
+/* =================HEADER LAYOUT====================== */
+
+/* 
+    Setting header as a flex container to make h1 logo and nav block on same horizontal line.
+*/
+header {
+  padding: 5% 0 5% 0;
+  display: flex;
+  /* to align all items within this flex container vertically aligned */
+  align-items: center;
+}
+/* 
+    header has only h1 and nav direct children, so it's ok to use `*` notation to indicate
+    all elements within header to have a flex property of 1
+*/
+header > * {
+  flex: 1;
+}
+
+header > h1 {
+  text-align: right;
+  padding: 0 5px 0 0;
+}
+
+/*
+    Setting nav as a nested flex container to hold all p elements in horizontal alignment
+*/
+header > nav {
+  padding: 0 5% 0 5%;
+  display: flex;
+  /* to align all items within this flex container vertically aligned */
+  align-items: center;
+}
+
+header p {
+  flex: 1;
+  word-spacing: normal;
+  /* text-align: right; */
+}
+
+/* =================FOOTER LAYOUT====================== */
+
+footer {
+  text-align: center;
+  padding: 5% 0 5% 0;
+}
+
+/* =================MAIN LAYOUT====================== */
+
+main {
+  text-align: center;
+  width: 90%;
+}
+
+main :is(h2, h3) {
+  text-align: center;
+}
+
+#about,
+#portfolio,
+#contact {
+  padding: 5% 0 5% 0;
+}
+
+#abt-container {
+  display: flex;
+  align-items: center;
+}
+
+.abt-item {
+  flex: 1;
+}
+
+.abt-item:nth-of-type(1) {
+  text-align: center;
+}
+
+#folio-container {
+  display: flex;
+}
+
+.folio-item {
+  flex: 1;
+}
+
+/* =================COMMON LAYOUT====================== */
+
+.left-aligned {
+  text-align: left;
+}
+
+p {
+  line-height: 1.5;
+  word-spacing: 0.3em;
+}

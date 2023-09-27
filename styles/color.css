@@ -1,0 +1,20 @@
+body {
+  background-color: #2e3440;
+  color: #eceff4;
+}
+
+hr {
+  border: #eceff4 solid 1px;
+}
+
+a:link {
+  color: #ebcb8b;
+}
+
+a:hover {
+  color: #d8dee9;
+}
+
+.image-circle {
+  border: solid 3px #ebcb8b;
+}

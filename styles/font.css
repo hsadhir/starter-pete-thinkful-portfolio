@@ -1,0 +1,13 @@
+body {
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:is(h1, h2, h3, nav > p) {
+  font-family: "Playfair Display", Times, serif;
+}
+
+.font-14 {
+  font-size: 14px;
+  word-spacing: normal;
+  text-align: center;
+}
